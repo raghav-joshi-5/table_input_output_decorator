@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { TodoFormComponent } from './shared/component/todo-form/todo-form.component';
+import { TodoTodoListComponent } from './shared/component/todo-todo-list/todo-todo-list.component';
+import { TodoDashComponent } from './shared/component/todo-dash/todo-dash.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoFormComponent,
+    TodoTodoListComponent,
+    TodoDashComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
